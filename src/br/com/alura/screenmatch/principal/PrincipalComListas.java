@@ -21,6 +21,9 @@ public class PrincipalComListas {
 
         for(Titulo item: lista){
             System.out.println(item);
+            if(item instanceof Filme filme && filme.getClassificacao() > 2){
+                System.out.println("Classificacao " + filme.getClassificacao());
+            }
         }
     }
 }
